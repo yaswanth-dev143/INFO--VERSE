@@ -1,4 +1,4 @@
-/* @import url(https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap);
 
 * {
     margin: 0;
@@ -7,17 +7,9 @@
     font-family: "poppins", sans-serif;
 }
 
-<<<<<<< HEAD:Style/login.css
 body {
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    background-image: url(../Images/login1.jpeg);
-=======
-body{
-    min-height:100vh;
-    background-image:url("../images/login1.jpeg");
->>>>>>> 3f39828d85ef155d648b88e2681da4f7a5e1fd70:styles/login.css
+    background-image: url("../images/login1.jpeg");
     background-repeat: no-repeat;
     background-size: 1500px;
     overflow: hidden;
@@ -27,30 +19,14 @@ body{
     align-items: center;
 }
 
-<<<<<<< HEAD:Style/login.css
-.container {
-    max-width: 440px;
-    padding: 0 10px;
-    margin: 170px auto auto 800px;
-}
 
 .wrapper {
-    margin-top: 150px;
-    width: 100%;
+    width: 440px;
+
     background-color: sienna;
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
-=======
-
-.wrapper{
-    width:440px;
-
-    background-color:sienna;
-    color:#fff;
-    border-radius:10px;
-    padding:30px 40px;
->>>>>>> 3f39828d85ef155d648b88e2681da4f7a5e1fd70:styles/login.css
 }
 
 .wrapper h1 {
@@ -109,7 +85,6 @@ body{
     text-align: center;
     margin: 20px 0 15px;
 }
-<<<<<<< HEAD:Style/login.css
 
 .register-link p a {
     color: #fff;
@@ -119,10 +94,6 @@ body{
 
 .register-link p a:hover {
     text-decoration: underline;
-}
-=======
-.register-link p a:hover{
-    text-decoration:underline;
 }
 
 /* Media queries for tablet and smartphone */
@@ -134,4 +105,3 @@ body{
     }
 
 }
->>>>>>> 3f39828d85ef155d648b88e2681da4f7a5e1fd70:styles/login.css
