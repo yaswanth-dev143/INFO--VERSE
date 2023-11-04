@@ -8,22 +8,21 @@
 }
 
 body{
-    justify-content: center;
-    align-items: center;
     min-height:100vh;
-    background-image:url(login1.jpeg);
+    background-image:url("../images/login1.jpeg");
     background-repeat: no-repeat;
     background-size:1500px;
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.container{
-    max-width:440px;
-    padding:0 10px;
-    margin: 170px auto auto 800px;
-}
+
+
 .wrapper{
-    margin-top: 150px;
-    width:100%;
+    width:440px;
+
     background-color:sienna;
     color:#fff;
     border-radius:10px;
@@ -88,4 +87,14 @@ body{
 }
 .register-link p a:hover{
     text-decoration:underline;
+}
+
+/* Media queries for tablet and smartphone */
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        width: 400px;
+    }
+
 }
