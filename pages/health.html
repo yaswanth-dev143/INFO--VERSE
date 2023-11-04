@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <title>Health</title>
+</head>
+<body>
+    <style>
+        .con{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-card{
+            position:absolute;
+            width: 220px;
+            height: 215px;
+            background:#8aedcc;
+            padding:30px;
+            border-radius: 50%;
+            transition: .6s;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 280px;
+        }
+        .ima img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .ima img{
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 50px #3336;
+            transition: .3s;
+            transition-timing-function: ease-out;
+            
+        }
+        .ima:hover img,caption{
+            border-radius: 10px;
+            
+           
+        }
+        .ima:hover img{
+            transform: translateY(-50px);
+            transition: .5s;
+            
+        }
+        .caption{
+            text-align: center; 
+            visibility:hidden;
+        }
+        
+        .profile-card:hover p{
+            color:#0c52a1;
+            font-size: 15px;
+            font-weight:600;
+            visibility: visible;
+        }
+        .profile-card:h.caption p{
+            font-size: 130px;
+        }over h3{
+            font-size: 16px;
+            color: black;
+            visibility: visible;
+        }
+        .profile-card:hover img{
+            visibility: visible;
+        }
+        .caption p{
+            font-size: xx-large;
+        }
+        nav a i{
+         font-size:xx-large;
+         color:black;
+        }
+        @media (max-width:1560px) 
+        {
+            header{
+                padding: 15px 40px;
+            }
+            p{
+                font-size:x-large ;
+            }
+            
+        }
+        
+            </style>
+        </head>
+        <body>
+            <section class="header">
+                <nav>
+                   <a href="landingp.html"><i class='bx bxs-home'></i></a>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="science.html">Science</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="login.html">Log Out</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <div class="con">
+                <div class="main">
+                   <div class="profile-card">
+                       <div class="ima">
+                          <a href=""><img src="foo.jpg"></a>
+                       </div>
+                       <div class="caption">
+                           <p>Food Facts</p>
+                       </div>
+                   </div>
+                </div>
+                <div class="main">
+                   <div class="profile-card">
+                       <div class="ima">
+                         <a href=""><img src="dise.jpg"></a>
+                       </div>
+                       <div class="caption">
+                           <p>Diseases Facts</p>
+                       </div>
+                   </div>
+                </div>
+                 <div class="main">
+                    <div class="profile-card">
+                        <div class="ima">
+                         <a href=""><img src="random facts.avif"></a>
+                        </div>
+                        <div class="caption">
+                            <p>Random Facts</p>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+            
+        </body>
+        </html> 
+</body>
+</html>

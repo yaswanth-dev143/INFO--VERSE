@@ -7,16 +7,27 @@
     font-family: "poppins", sans-serif;
 }
 
+<<<<<<< HEAD:Style/login.css
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-image: url(../Images/login1.jpeg);
+=======
+body{
+    min-height:100vh;
+    background-image:url("../images/login1.jpeg");
+>>>>>>> 3f39828d85ef155d648b88e2681da4f7a5e1fd70:styles/login.css
     background-repeat: no-repeat;
     background-size: 1500px;
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+<<<<<<< HEAD:Style/login.css
 .container {
     max-width: 440px;
     padding: 0 10px;
@@ -30,6 +41,16 @@ body {
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
+=======
+
+.wrapper{
+    width:440px;
+
+    background-color:sienna;
+    color:#fff;
+    border-radius:10px;
+    padding:30px 40px;
+>>>>>>> 3f39828d85ef155d648b88e2681da4f7a5e1fd70:styles/login.css
 }
 
 .wrapper h1 {
@@ -88,6 +109,7 @@ body {
     text-align: center;
     margin: 20px 0 15px;
 }
+<<<<<<< HEAD:Style/login.css
 
 .register-link p a {
     color: #fff;
@@ -98,3 +120,18 @@ body {
 .register-link p a:hover {
     text-decoration: underline;
 }
+=======
+.register-link p a:hover{
+    text-decoration:underline;
+}
+
+/* Media queries for tablet and smartphone */
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        width: 400px;
+    }
+
+}
+>>>>>>> 3f39828d85ef155d648b88e2681da4f7a5e1fd70:styles/login.css
