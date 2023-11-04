@@ -10,6 +10,8 @@
 body{
     justify-content: center;
     align-items: center;
+    display: flex;
+
     min-height:100vh;
     background-image:url(signup3.jpeg);
     background-repeat: no-repeat;
@@ -18,9 +20,8 @@ body{
 
 }
 .wrapper{
-    margin-top: 50px;
-    margin-left: 100px;
-    width:420px;
+    
+    width:440px;
     background-color:#494949d2;
     color:#fff;
     border-radius:10px;
@@ -85,4 +86,14 @@ body{
 }
 .register-link p a:hover{
     text-decoration:underline;
+}
+
+/* Media queries for tablet and smartphone */
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        width: 400px;
+    }
+
 }

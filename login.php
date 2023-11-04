@@ -1,49 +1,49 @@
 <?php
-// session_start();//it will start the session
+session_start();//it will start the session
 
-//     include("connection.php");
-//     include("functions.php");
-//         if($_SERVER['REQUEST_METHOD']=="POST")
-//         {
-//             //something was posted
-//             $frist_name = $_POST['frist_name'];
-//             $last_name = $_POST['last_name'];
-//             $user_email = $_POST['user_email'];
-//             $password = $_POST['password'];
-//             if(!empty($user_email) && !empty($password) && !is_numeric($user_fristname) && !is_numeric($user_lastname))
-//             {
-//                 //read form the database
-//                 $query = "select * from users where user_email = '$user_email' limit 1"; 
+    include("connection.php");
+    include("functions.php");
+        if($_SERVER['REQUEST_METHOD']=="POST")
+        {
+            //something was posted
+            $frist_name = $_POST['frist_name'];
+            $last_name = $_POST['last_name'];
+            $user_email = $_POST['user_email'];
+            $password = $_POST['password'];
+            if(!empty($user_email) && !empty($password) && !is_numeric($user_fristname) && !is_numeric($user_lastname))
+            {
+                //read form the database
+                $query = "select * from users where user_email = '$user_email' limit 1"; 
 
-//                 $result = mysqli_query($con,$query);
-//                 if($result)
-//                 {
-//                     if($result && mysqli_num_rows($result) > 0)
-//                     {
-//                         $user_data = mysqli_fetch_assoc($result);
+                $result = mysqli_query($con,$query);
+                if($result)
+                {
+                    if($result && mysqli_num_rows($result) > 0)
+                    {
+                        $user_data = mysqli_fetch_assoc($result);
 
-//                         if($user_data['password'] === $password)
-//                         {
-//                             $_SESSION['user_id'] = $user_data['user_id'];
-//                             header("Location: landingp.html");
-//                             die();                           
-//                         }
-//                     }                    
-//                 }
-//                 echo "<script>alert(' Wrong username and password!!');</script>";
+                        if($user_data['password'] === $password)
+                        {
+                            $_SESSION['user_id'] = $user_data['user_id'];
+                            header("Location: ./pages/landingp.html");
+                            die();                           
+                        }
+                    }                    
+                }
+                echo "<script>alert(' Wrong username and password!!');</script>";
 
-//             }
-//             else
-//             {
-//                 echo "Please enter some valid information!";
-//             }
-//         }
+            }
+            else
+            {
+                echo "Please enter some valid information!";
+            }
+        }
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="./styles/login.css">
         <title>Login Page</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     </head>
@@ -112,7 +112,6 @@ function isAlphaNumeric(elem,helperMsg){
 }
     </script>
     <body>
-    <div class="container">
         <div class="wrapper">
             <form onsubmit='return formValidator()' method="post">
                 <h1>Login</h1>
@@ -130,6 +129,5 @@ function isAlphaNumeric(elem,helperMsg){
                 </div>
             </form>
         </div>
-    </div>
     </body>
 </html>
