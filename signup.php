@@ -32,7 +32,7 @@ session_start();//it will start the session
     <head>
         <title>Sign up Page</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet" href="./styles/signup.css">
     </head>
         <script>
             function formValidator(){

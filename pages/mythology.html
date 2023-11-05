@@ -1,256 +1,278 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Mythology Page</title>
     <style>
-        .fact-container {
-            border: 1px solid #ccc;
-            padding: 40px;
-            margin: 10px;
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .nav-bar {
+        width: 100vw;
+        height: 55px;
+        background: #ff9944;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-bar a img {
+        width: 100px;
+        height: 45px;
+        margin-left: 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .cards {
+        width: 100vw;
+
+        margin-top: 40px;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cards-s {
+        display: inline-block;
+      }
+
+      .card {
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        text-align: center;
+      }
+
+      .card-header {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .card-body {
+        padding: 10px;
+      }
+
+      .card-body img {
+        width: 280px;
+        aspect-ratio: 4/2.5;
+      }
+
+      .card-footer {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .card-footer a {
+        text-decoration: none;
+      }
+
+      @media (min-width: 728px) {
+        .nav-links {
+          margin-right: 20px;
+          display: block;
+          list-style: none;
+          display: flex;
+          gap: 80px;
         }
-        .likes-dislikes {
-            align-items: center;
-       }
-        .fact-container .likes-dislikes{
-            margin-left: 40px;
-            margin-bottom: 20px;
-            margin-top: 50px;
+
+        .nav-links li {
+          width: 90px;
+          height: 30px;
+          border-radius: 10px;
+          background-color: wheat;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-        .container{
-            display: flex;
+        .nav-links li a {
+          text-align: center;
+          text-decoration: none;
+          color: black;
         }
-        .fact{
-            display: grid;
+
+        .cards-s {
+          display: flex;
         }
-        h4{
-            font-size:larger;
-        }
-        .cards{
-            width:25%;
-            display:inline-block;
-            background-color: grey;
-            border-radius:10px;
-            margin:40px;
-        }
-        .cards:hover{
-            box-shadow: 2px 2px 10px black;
-        
-        }
-        .image img{
-            background-size: cover;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-        .back button{
-            padding:15px 32px;
-            float:right;
-            background-color: #4CAF50;
-            border:2px solid #4CAF50;
-            border-radius:10px;
-            color:black;
-            text-align:center;
-            text-decoration:none;
-            font-size:16px;
-            margin-bottom: 10px;
-        }
-        button a:link{
-            text-decoration: none ;
-        }
+      }
     </style>
-</head>
-<body>
-    <!-- Fact 1 -->
-    <div class="fact-container container" >
-        <div class="cards">
-            <div class="image">
-                <img src="mahabaratham.jpeg" width="100%" height="210px">
-            </div>
-        <div class="fact">
-        <h4>Mahabratham ia also known as <br> &nbsp;pancham veda the fifth veda</h4>
-        <div class="likes-dislikes">
-            <button onclick="likeFact(1)" id="like-btn-1">Like</button>
-            <span id="fact1-likes">0</span> Likes
-            <button onclick="dislikeFact(1)" id="dislike-btn-1">Dislike</button>
-            <span id="fact1-dislikes">0</span> Dislikes
-        </div>
-    </div>
-    </div>
-
-    <!-- Fact 2 -->
-        <div class="cards">
-            <div class="image">
-                <img src="ravana.jpeg" width="100%" height="210px">
-            </div>
-            <div class="fact">
-                <h4>Ravana was great grandson of brahma.</h4>
-        <div class="likes-dislikes">
-            <button onclick="likeFact(2)" id="like-btn-2">Like</button>
-            <span id="fact2-likes">0</span> Likes
-            <button onclick="dislikeFact(2)" id="dislike-btn-2">Dislike</button>
-            <span id="fact2-dislikes">0</span> Dislikes
-        </div>
-    </div>
-        </div>
-    <!--Fact 3-->
-        <div class="cards">
-            <div class="image">
-                <img src="parasurama.png" width="100%" height="210px">
-            </div>
-            <div class="fact">
-                <h4>Lord parasurama is the only avatar of vishnu who lived to see the other two avater of vishnu -Rma and Krishna</h4>
-        <div class="likes-dislikes">
-            <button onclick="likeFact(3)" id="like-btn-3">Like</button>
-            <span id="fact3-likes">0</span> Likes
-            <button onclick="dislikeFact(3)" id="dislike-btn-3">Dislike</button>
-            <span id="fact3-dislikes">0</span> Dislikes
-        </div>
-    </div>
-        </div>
-        </div>
-        <!-- Fact 4 -->
-        <div class="fact-container container" >
-            <div class="cards">
-                <div class="image">
-                    <img src="karna.jpeg" width="100%" height="210px">
-                </div>
-                <div class="fact">
-                    <h4>Karna was the son of the surya(sun god).</h4>
-            <div class="likes-dislikes">
-                <button onclick="likeFact(4)" id="like-btn-4">Like</button>
-                <span id="fact4-likes">0</span> Likes
-                <button onclick="dislikeFact(4)" id="dislike-btn-4">Dislike</button>
-                <span id="fact4-dislikes">0</span> Dislikes
-            </div>
-        </div>
-        </div>
-    
-        <!-- Fact 5 -->
-        <div class="cards">
-            <div class="image">
-                <img src="hanuma.jpeg" width="100%" height="210px">
-            </div>
-            <div class="title">
-                <h4>hanuma is the son of anjana and kesari</h4>
-            <div class="likes-dislikes">
-                <button onclick="likeFact(5)" id="like-btn-5">Like</button>
-                <span id="fact5-likes">0</span> Likes
-                <button onclick="dislikeFact(5)" id="dislike-btn-5">Dislike</button>
-                <span id="fact5-dislikes">0</span> Dislikes
-            </div>
-        </div>
-            </div>
-        <!--Fact 6-->
-        <div class="cards">
-            <div class="image">
-                <img src="draupadi1.jpeg" width="100%" height="210px">
-            </div>
-            <div class="title">
-                <h4>Draupadi is also known as panchali.</h4>
-            <div class="likes-dislikes">
-                <button onclick="likeFact(6)" id="like-btn-6">Like</button>
-                <span id="fact6-likes">0</span> Likes
-                <button onclick="dislikeFact(6)" id="dislike-btn-6">Dislike</button>
-                <span id="fact6-dislikes">0</span> Dislikes
-            </div>
-        </div>
-            </div>
-            </div>
-
-        <!-- Fact 7 -->
-        <div class="fact-container container" >
-            <div class="cards">
-                <div class="image">
-                    <img src="krishna.jpeg" width="100%" height="210px">
-                </div>
-                <div class="title">
-                    <h4>Lord krishna has 108 names.</h4>
-            <div class="likes-dislikes">
-                <button onclick="likeFact(7)" id="like-btn-7">Like</button>
-                <span id="fact7-likes">0</span> Likes
-                <button onclick="dislikeFact(7)" id="dislike-btn-7">Dislike</button>
-                <span id="fact7-dislikes">0</span> Dislikes
-            </div>
-        </div>
-        </div>
-    
-        <!-- Fact 8 -->
-        <div class="cards">
-            <div class="image">
-                <img src="draupadi.jpeg" width="100%" height="210px">
-            </div>
-            <div class="fact">
-                <h4>Draupadi and Krishna were brother and sister.</h4>
-            <div class="likes-dislikes">
-                <button onclick="likeFact(8)" id="like-btn-8">Like</button>
-                <span id="fact8-likes">0</span> Likes
-                <button onclick="dislikeFact(8)" id="dislike-btn-8">Dislike</button>
-                <span id="fact8-dislikes">0</span> Dislikes
-            </div>
-        </div>
-    </div>
-            </div>
-            </div>
-            <div class="back">
-                <button><a href="landingp.html">Back Again..</a></button>
-            </div>
-
-
     <script>
-        const likedFacts = new Set(); // To track which facts the user has liked
-
-        function likeFact(factId) {
-            const likeBtn = document.getElementById(`like-btn-${factId}`);
-            const dislikeBtn = document.getElementById(`dislike-btn-${factId}`);
-            const likesCount = document.getElementById(`fact${factId}-likes`);
-            const dislikesCount = document.getElementById(`fact${factId}-dislikes`);
-
-            if (likedFacts.has(factId)) {
-                likedFacts.delete(factId);
-                likesCount.textContent = parseInt(likesCount.textContent) - 1;
-                likeBtn.textContent = 'Like';
-            } else {
-                likedFacts.add(factId);
-                likesCount.textContent = parseInt(likesCount.textContent) + 1;
-                likeBtn.textContent = 'Liked';
-                if (dislikedFacts.has(factId)) {
-                    dislikedFacts.delete(factId);
-                    dislikesCount.textContent = parseInt(dislikesCount.textContent) - 1;
-                    dislikeBtn.textContent = 'Dislike';
-                }
-            }
-
-            // Enable both buttons after the vote is toggled
-            likeBtn.disabled = false;
-            dislikeBtn.disabled = false;
-        }
-
-        const dislikedFacts = new Set(); // To track which facts the user has disliked
-
-        function dislikeFact(factId) {
-            const likeBtn = document.getElementById(`like-btn-${factId}`);
-            const dislikeBtn = document.getElementById(`dislike-btn-${factId}`);
-            const likesCount = document.getElementById(`fact${factId}-likes`);
-            const dislikesCount = document.getElementById(`fact${factId}-dislikes`);
-
-            if (dislikedFacts.has(factId)) {
-                dislikedFacts.delete(factId);
-                dislikesCount.textContent = parseInt(dislikesCount.textContent) - 1;
-                dislikeBtn.textContent = 'Dislike';
-            } else {
-                dislikedFacts.add(factId);
-                dislikesCount.textContent = parseInt(dislikesCount.textContent) + 1;
-                dislikeBtn.textContent = 'Disliked';
-                if (likedFacts.has(factId)) {
-                    likedFacts.delete(factId);
-                    likesCount.textContent = parseInt(likesCount.textContent) - 1;
-                    likeBtn.textContent = 'Like';
-                }
-            }
-
-            // Enable both buttons after the vote is toggled
-            likeBtn.disabled = false;
-            dislikeBtn.disabled = false;
-        }
+      let likeCount = 8;
+      let show = document.getElementById("show");
+      let likeButton = document
+        .getElementById("likeButton")
+        ?.addEventListener("click", () => {
+          likeCount++;
+          show.innerText = likeCount;
+        });
     </script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar" style="color: whitesmoke; padding-left: 10px">
+        <h2>Mythology Facts</h2>
+      </nav>
+
+      <div class="cards">
+        <div class="cards-s">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-s">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-s">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big Question Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .nav-bar {
+        width: 100vw;
+        height: 55px;
+        background: #ff9944;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-bar a img {
+        width: 100px;
+        height: 45px;
+        margin-left: 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .cards {
+        width: 100vw;
+
+        margin-top: 40px;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cards-s {
+        display: inline-block;
+      }
+
+      .card {
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        text-align: center;
+      }
+
+      .card-header {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .card-body {
+        padding: 10px;
+      }
+
+      .card-body img {
+        width: 280px;
+        aspect-ratio: 4/2.5;
+      }
+
+      .card-footer {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .card-footer a {
+        text-decoration: none;
+      }
+
+      @media (min-width: 728px) {
+        .nav-links {
+          margin-right: 20px;
+          display: block;
+          list-style: none;
+          display: flex;
+          gap: 80px;
+        }
+
+        .nav-links li {
+          width: 90px;
+          height: 30px;
+          border-radius: 10px;
+          background-color: wheat;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .nav-links li a {
+          text-align: center;
+          text-decoration: none;
+          color: black;
+        }
+
+        .cards-s {
+          display: flex;
+        }
+      }
+    </style>
+    <script>
+      let likeCount = 8;
+      let show = document.getElementById("show");
+      let likeButton = document
+        .getElementById("likeButton")
+        ?.addEventListener("click", () => {
+          likeCount++;
+          show.innerText = likeCount;
+        });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar" style="color: whitesmoke; padding-left: 10px">
+        <h2>Biq Question Facts</h2>
+      </nav>
+
+      <div class="cards">
+        <div class="cards-s">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-s">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-s">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
+            </div>
+            <div class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, voluptas, ut ducimus earum fuga rem, neque asperiores
+              odio voluptatem autem quis. Fugiat quas temporibus dicta tempore
+              eos sed. Accusantium, consequuntur.
+            </div>
+            <div class="card-footer">
+              <div>
+                <span id="show">0</span> Likes
+                <button id="likeButton">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

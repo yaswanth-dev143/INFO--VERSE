@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../styles/landingp.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/landingp.css" />
     <title>Infoverse</title>
-</head>
-<body>
+    <script>
+      let show = () => {
+        document.getElementById("nav-links").style.display = "inline-block";
+        document.getElementById("close").style.display = "inline-block";
+        document.getElementById("side").style.display = "none";
+      };
 
-   <div class="container">
-    <nav class="nav-bar">
-        <a href="./landingp.html"><img src="../images/infoverse.jpeg"></a>
-         <ul class="nav-links">
-             <li><a href="./landingp.html">Home</a></li>
-             <li><a href="./contact.html">Contact</a></li>
-             <li><a href="./about.html">About</a></li>
-             <li><a href="./login.php">Log Out</a></li>
-         </ul>
-     </nav>
+      let close = () => {
+        document.getElementById("nav-links").style.display = "none";
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="./landingp.html"><img src="../images/infoverse.jpeg" /></a>
 
-     <div class="cards">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="./landingp.html">Home</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="../login.php">Log Out</a></li>
+        </ul>
+      </nav>
+
+      <div class="cards">
         <div class="cards-s">
-            <div class="card">
-                <div class="card-header">Enterainment</div>
-                <div class="card-body">
-                    <img src="../images/entertainment.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./entertainment.html">Read More...</a>
-                </div>
+          <div class="card">
+            <div class="card-header">Enterainment</div>
+            <div class="card-body">
+              <img src="../images/entertainment.jpeg" />
             </div>
-            <div class="card">
-                <div class="card-header">Mythology</div>
-                <div class="card-body">
-                    <img src="../images/mythology.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./mythology.html">Read More...</a>
-                </div>
+            <div class="card-footer">
+              <a href="./entertainment.html">Read More...</a>
             </div>
-            <div class="card">
-                <div class="card-header">History</div>
-                <div class="card-body">
-                    <img src="../images/history1.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./history.html">Read More...</a>
-                </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Mythology</div>
+            <div class="card-body">
+              <img src="../images/mythology.jpeg" />
             </div>
+            <div class="card-footer">
+              <a href="./mythology.html">Read More...</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">History</div>
+            <div class="card-body">
+              <img src="../images/history1.jpeg" />
+            </div>
+            <div class="card-footer">
+              <a href="./history.html">Read More...</a>
+            </div>
+          </div>
         </div>
         <div class="cards-s">
-            <div class="card">
-                <div class="card-header">Medical</div>
-                <div class="card-body">
-                    <img src="../images/medical1.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./medical.html">Read More...</a>
-                </div>
+          <div class="card">
+            <div class="card-header">Medical</div>
+            <div class="card-body">
+              <img src="../images/medical1.jpeg" />
             </div>
-            
-            <div class="card">
-                <div class="card-header">Geographical</div>
-                <div class="card-body">
-                    <img src="../images/geoprahical.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./geography.html">Read More...</a>
-                </div>
+            <div class="card-footer">
+              <a href="./medical.html">Read More...</a>
             </div>
-            <div class="card">
-                <div class="card-header">Movies</div>
-                <div class="card-body">
-                    <img src="../images/movies1.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./movie.html">Read More...</a>
-                </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Geographical</div>
+            <div class="card-body">
+              <img src="../images/geoprahical.jpeg" />
             </div>
+            <div class="card-footer">
+              <a href="./geography.html">Read More...</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Movies</div>
+            <div class="card-body">
+              <img src="../images/movies1.jpeg" />
+            </div>
+            <div class="card-footer">
+              <a href="./movie.html">Read More...</a>
+            </div>
+          </div>
         </div>
         <div class="cards-s">
-            <div class="card">
-                <div class="card-header">Food</div>
-                <div class="card-body">
-                    <img src="../images/food1.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./food.html">Read More...</a>
-                </div>
+          <div class="card">
+            <div class="card-header">Food</div>
+            <div class="card-body">
+              <img src="../images/food1.jpeg" />
             </div>
-            <div class="card">
-                <div class="card-header">Big Questions</div>
-                <div class="card-body">
-                    <img src="../images/bigquestion.jpeg">
-                </div>
-                <div class="card-footer">
-                    <a href="./bigquestions.html">Read More...</a>
-                </div>
+            <div class="card-footer">
+              <a href="./food.html">Read More...</a>
             </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Big Questions</div>
+            <div class="card-body">
+              <img src="../images/bigquestion.jpeg" />
+            </div>
+            <div class="card-footer">
+              <a href="./bigquestions.html">Read More...</a>
+            </div>
+          </div>
         </div>
-     </div>
-
-   </div> 
-
-</body>
+      </div>
+    </div>
+  </body>
 </html>
